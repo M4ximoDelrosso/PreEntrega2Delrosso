@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+Mobile first
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .13fr 1fr .5fr;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+/* HEADER */
+header{
+    background-color: #0A92F5;
+    padding: 20px;
+    top: 0px;
+}
+
+#header__a{
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+#header__a:hover{
+    color: #F2A71B;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo h1{
+    color: #F2A71B;
+    font-size: 40px;
+}
+
+/* MAIN */
+main{
+    background-color: #DCD7EA;
+}
+.main__index figure img{
+    display: none;
+}
+
+.index__texto h2{
+    font-size: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index__texto p{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+p a{
+    text-decoration: none;
+    color: black;
+}
+
+section a:hover{
+    color: #F2A71B;
+}
+
+/* PREGUNTAS FRECUENTES */
+.preg__marco{
+    padding-top: 10px;
+    padding-bottom: 90px;
+    padding-left: 30px;
+}
+
+.preg__texto{
+    margin-left: 30px;
+    padding-top: 20px;
+    line-height: 39.2px;
+}
+
+.preg__texto h2{
+    font-size: 25px;
+}
+
+.preg__texto p{
+    font-size: 20px;
+}
+
+/* TIENDA */
+.tienda__title{
+    padding-bottom: 70px;
+}
+
+.tienda__title h2{
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.tienda__lista{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 45px;
+}
+
+.tienda__card{
+    background-color: rgba(172,167,167,1);
+    border: 1px solid black;
+    height: 410px;
+    width: 225px;
+    line-height: 31px;
+}
+
+.tienda__card:hover{
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.tienda__card img{
+    height: 224px;
+    width: 224px;
+}
+
+.tienda__card h3{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.tienda__card p{
+    margin-bottom: 6px;
+    margin-left: 20px;
+    font-size: 17px;
+}
+
+.tienda__card a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+    background-color: #729CFF;
+    padding: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.tienda__card a:hover{
+    color: black;
+    border: 1px solid;
+}
+
+/* CAPACITACIONES */
+.capa__section{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+}
+.capa__section h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.capa__video{
+    text-align: center;
+    padding-top: 20px;
+}
+
+iframe{
+    height: 210px;
+    width: 370px;
+}
+
+.capa__texto h2{
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.capa__texto p{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* CONTACTO */
+.section__form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section .section__h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* CARRITO */
+.carro__position{
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.carro__cubo{
+    height: calc(100vh - 8rem);
+    width: 80%;
+    border: 2px solid #729CFF;
+    background-color: #b9cdfd;
+    display: grid;
+    justify-items: center;
+    padding-top: 30px;
+}
+
+.carro__title{
+    width: 100%;
+    height: auto;
+    margin-top: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carro__title a{
+    color: black;
+    text-decoration: none;
+}
+
+.carro__imagen{
+    margin-top: 70px;
+}
+
+/* FOOTER */
+footer{
+    grid-area: footer;
+    font-size: 16px;
+    background-color:  #F2A71B;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.footer__link a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer__mapa{
+    margin-right: 20px;
+}
+
+.footer__mapa iframe{
+    height: 220px;
+    width: 370px;
+}
+
+@media(min-width: 500px){
+    .tienda__lista{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 768px){
+    header nav{
+        word-spacing: 10px;
+    }
+    
+    /* CAPACITACIONES */
+    iframe{
+        height: 315px;
+        width: 560px;
+    }
+
+    /* TIENDA */
+    .tienda__lista{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* CARRITO */
+    .carro__cubo{
+        grid-template-columns: 50% 50%;
+    }
+
+    /* FOOTER */
+    footer{
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "colum1 colum2"
+        ;
+    }
+
+    footer section{
+        grid-area: colum1;
+    }
+    .footer__mapa{
+        grid-area: colum2;
+    }
+}
+
+@media(min-width: 1024px){
+    header{
+        background: rgb(34,178,195);
+        background: linear-gradient(0deg, rgba(34,178,195,1) 31%, rgba(45,70,253,1) 100%);
+    }
+
+    #navbarNav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* INDEX */
+    .main__index figure img{
+        display: flex;
+        width: 58.1vw;
+    }
+
+    .index__texto{
+        margin-top: 168px;
+        margin-left: 44px;
+        margin-right: 20px;
+    }
+
+    .main__index{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "section figure"
+        ;
+    }
+
+    /* TIENDA */
+    .tienda__lista{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tienda__card{
+        height: 460px;
+        width: 300px;
+    }
+
+    .tienda__card img{
+        height: 300px;
+        width: 300px;
+    }
+
+    /* FOOTER */
+    footer{
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
