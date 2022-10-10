@@ -1,0 +1,46 @@
+/* CAPACITACIONES */
+.capa__section{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 30px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    h2{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+}
+
+.capa__video{
+    text-align: center;
+    padding-top: 20px;
+}
+
+iframe{
+    height: 210px;
+    width: 370px;
+}
+
+.capa__texto{
+    h2{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    p, ul{
+        font-size: 16px;
+        line-height: 32px;
+        list-style: none;
+    }
+}
+
+li{
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+

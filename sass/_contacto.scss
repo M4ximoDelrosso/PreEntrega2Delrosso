@@ -1,0 +1,23 @@
+/* CONTACTO */
+.contacto__cubo{
+    background-color: $claro;
+    border-radius: 20px;
+    border: 2px solid $celeste;
+    display: grid;
+    grid-template-columns: minmax(15rem, 1fr);
+    justify-items: center;
+    h2{
+        padding: 10px;
+        padding-top: 15px;
+        font-size: 25px;
+    }
+    article{
+        @include flex-column-center;
+        line-height: 35px;
+        padding-bottom: 15px;
+    }
+}
+
+.contacto__boton{
+    margin-right: 10px;
+}

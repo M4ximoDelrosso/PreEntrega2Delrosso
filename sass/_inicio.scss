@@ -1,0 +1,16 @@
+/* INICIO */
+.index__texto{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    h2{
+        font-size: 35px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    p{
+        font-size: $size;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

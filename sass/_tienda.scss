@@ -1,0 +1,71 @@
+/* TIENDA */
+.tienda__title{
+    padding-bottom: 70px;
+    h2{
+        font-size: 30px;
+        padding-top: 20px;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+}
+
+.tienda__lista{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 45px;
+}
+
+.tienda__card{
+    background-color: $celeste;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid black;
+    height: 410px;
+    width: 225px;
+    line-height: 31px;
+    box-sizing: content-box;
+    img{
+        height: 224px;
+        width: 224px;
+    }
+
+    h3{
+        padding-top: 10px;
+        padding-left: 20px;
+        font-size: $size;
+    }
+
+    p{
+        margin-bottom: 6px;
+        margin-left: 20px;
+        font-size: 17px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: $size;
+        background-color: $gris;
+        border-radius: 10px;
+        padding: 3px;
+        padding-left: 7px;
+        padding-right: 7px;
+        margin-left: 25px;
+        margin-right: 25px;
+        display: flex;
+        justify-content: center;
+    }
+
+    a:hover{
+        color: black;
+        border: 1px solid;
+    }
+}
+
+.tienda__card:hover{
+    transform: scale(1.1);
+    transition-property: all;
+    transition-duration: 1s;
+}
+

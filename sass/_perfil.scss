@@ -1,0 +1,9 @@
+/* PERFIL */
+.perfil__cubo{
+    @extend .carro__cubo;
+    height: calc(100vh - 14rem);
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 30px;
+    @include flex-column-center;
+}

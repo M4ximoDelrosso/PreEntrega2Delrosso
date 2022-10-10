@@ -1,0 +1,25 @@
+/* GALERÍA */
+.galeria__title{
+    text-align: center;
+    padding: 15px;
+    font-size: 30px;
+}
+.cont__img{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    padding: 20px;
+    padding-bottom: 40px;
+    gap: 10px;
+}
+.galeria__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria__item:nth-child(2){
+    grid-column-start: span 2;
+}
+.galeria__item:nth-child(6){
+    grid-column-start: span 2;
+}

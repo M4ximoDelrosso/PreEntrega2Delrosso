@@ -1,0 +1,117 @@
+header{
+    background-color: #0A92F5;
+    padding: 20px;
+    top: 0px;
+    @media(min-width: 1024px){
+        background: rgb(34,178,195);
+        background: linear-gradient(0deg, rgba(34,178,195,1) 31%, rgba(45,70,253,1) 100%);
+    }
+}
+
+@media(min-width: 500px){
+    .tienda__lista{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 768px){    
+    /* CAPACITACIONES */
+    iframe{
+        height: 315px;
+        width: 560px;
+    }
+
+    /* TIENDA */
+    .tienda__lista{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* CARRITO */
+    .carro__cubo{
+        grid-template-columns: 50% 50%;
+    }
+
+    /* FOOTER */
+    footer{
+        section{
+            grid-area: colum1;
+        }
+    }
+
+    .footer__mapa{
+        grid-area: colum2;
+    }
+}
+
+@media(min-width: 1024px){
+    #navbarNav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* INDEX */
+    .index__texto{
+        padding: 0;
+        margin-top: 100px;
+        margin-left: 44px;
+        margin-right: 20px;
+    }
+
+    .main__index{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "section figure"
+        ;
+    }
+
+    /* TIENDA */
+    .tienda__lista{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .tienda__card{
+        height: 460px;
+        width: 300px;
+    }
+
+    .tienda__card img{
+        height: 300px;
+        width: 300px;
+    }
+}
+
+footer{
+    grid-area: footer;
+    font-size: $size;
+    background-color:  #F2A71B;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    @media(min-width: 768px){
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "colum1 colum2"
+        ;
+    }
+    @media(min-width: 1024px){
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer__link{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    @media(min-width: 768px){
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
