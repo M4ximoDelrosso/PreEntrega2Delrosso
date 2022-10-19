@@ -249,7 +249,6 @@ li a {
   height: calc(100vh - 10rem);
   padding-left: 20px;
   padding-right: 20px;
-  line-height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
