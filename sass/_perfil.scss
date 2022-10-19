@@ -1,9 +1,18 @@
 /* PERFIL */
+@import "operaciones";
+
 .perfil__cubo{
     @extend .carro__cubo;
-    height: calc(100vh - 14rem);
+    height: calc(100vh - 10rem);
     padding-left: 20px;
     padding-right: 20px;
     line-height: 30px;
     @include flex-column-center;
+    align-content: center;
+}
+
+.form-check{
+    a{
+        color: black;
+    }
 }

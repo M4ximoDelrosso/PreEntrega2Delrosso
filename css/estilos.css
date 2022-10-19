@@ -28,11 +28,10 @@
   padding-top: 20px;
   line-height: 39.2px;
 }
-
 .preg__texto h2 {
+  font-weight: bolder;
   font-size: 25px;
 }
-
 .preg__texto p {
   font-size: 20px;
 }
@@ -61,7 +60,7 @@
   border-bottom-right-radius: 10px;
   border: 1px solid black;
   height: 410px;
-  width: 225px;
+  width: 224px;
   line-height: 31px;
   box-sizing: content-box;
 }
@@ -83,7 +82,7 @@
   text-decoration: none;
   color: black;
   font-size: 20px;
-  background-color: #DCD7EA;
+  background-color: white;
   border-radius: 10px;
   padding: 3px;
   padding-left: 7px;
@@ -118,6 +117,7 @@
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 25px;
+  font-weight: bolder;
 }
 
 .capa__video {
@@ -126,18 +126,18 @@
 }
 
 iframe {
-  height: 210px;
-  width: 370px;
+  height: 186px;
+  width: 330px;
 }
 
 .capa__texto h2 {
   font-size: 25px;
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 7px;
 }
 .capa__texto p, .capa__texto ul {
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 19px;
+  line-height: 35px;
   list-style: none;
 }
 
@@ -180,7 +180,7 @@ li a {
 .contacto__cubo {
   background-color: #b9cdfd;
   border-radius: 20px;
-  border: 2px solid #0A92F5;
+  border: 2px solid #729CFF;
   display: grid;
   grid-template-columns: minmax(15rem, 1fr);
   justify-items: center;
@@ -194,11 +194,13 @@ li a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  line-height: 35px;
   padding-bottom: 15px;
 }
 
 .contacto__boton {
+  margin-top: 5px;
+}
+.contacto__boton .contacto__enviar {
   margin-right: 10px;
 }
 
@@ -211,10 +213,10 @@ li a {
 }
 
 .contacto__prueba {
-  height: 67vh;
+  height: 80vh;
 }
 
-.carro__cubo {
+.carro__cubo, .perfil__cubo {
   height: calc(100vh - 8rem);
   width: 80%;
   border-radius: 20px;
@@ -244,17 +246,18 @@ li a {
 
 /* PERFIL */
 .perfil__cubo {
-  height: calc(100vh - 14rem);
-  width: 80%;
-  border-radius: 20px;
-  border: 2px solid #729CFF;
-  background-color: #b9cdfd;
+  height: calc(100vh - 10rem);
   padding-left: 20px;
   padding-right: 20px;
   line-height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
+}
+
+.form-check a {
+  color: black;
 }
 
 header {
@@ -287,7 +290,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
   }
   /* CARRITO */
-  .carro__cubo {
+  .carro__cubo, .perfil__cubo {
     grid-template-columns: 50% 50%;
   }
   /* FOOTER */
@@ -333,7 +336,7 @@ header {
 footer {
   grid-area: footer;
   font-size: 20px;
-  background-color: #F2A71B;
+  background-color: #729CFF;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 10px;
@@ -391,8 +394,8 @@ body {
   justify-content: center;
 }
 .header__logo h1 {
-  color: #F2A71B;
-  font-size: 45px;
+  color: white;
+  font-size: 50px;
 }
 
 /* MAIN */
@@ -419,15 +422,13 @@ footer h3, footer h4 {
 }
 
 .footer__link a {
-  text-decoration: none;
   color: black;
 }
 
 .footer__mapa {
-  margin-right: 20px;
+  margin-right: 5px;
 }
-
 .footer__mapa iframe {
   height: 220px;
-  width: 370px;
+  width: 330px;
 }/*# sourceMappingURL=estilos.css.map */

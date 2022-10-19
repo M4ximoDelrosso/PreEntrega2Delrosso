@@ -37,7 +37,7 @@ body{
     display: flex;
     justify-content: center;
     h1{
-        color: $orange;
+        color: white;
         font-size: 50px;
     }
 }
@@ -75,18 +75,14 @@ footer{
 
 .footer__link{
     a{
-        text-decoration: none;
         color: black;
     }
 }
 
 .footer__mapa{
-    margin-right: 20px;
-}
-
-.footer__mapa{
+    margin-right: 5px;
     iframe{
         height: 220px;
-        width: 370px;
+        width: 330px;
     }
 }
